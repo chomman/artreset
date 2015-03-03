@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: com.artreset.app.artist.model.ArtistTest
+-------------------------------------------------------------------------------
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.96 sec - in com.artreset.app.artist.model.ArtistTest

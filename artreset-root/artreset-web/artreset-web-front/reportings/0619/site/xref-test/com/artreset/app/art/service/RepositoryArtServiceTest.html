@@ -1,0 +1,97 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ko" lang="ko">
+<head><meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+<title>RepositoryArtServiceTest xref</title>
+<link type="text/css" rel="stylesheet" href="../../../../../stylesheet.css" />
+</head>
+<body>
+<div id="overview"><a href="../../../../../../testapidocs/com/artreset/app/art/service/RepositoryArtServiceTest.html">View Javadoc</a></div><pre>
+<a class="jxr_linenumber" name="L1" href="#L1">1</a>   <em class="jxr_javadoccomment">/**</em>
+<a class="jxr_linenumber" name="L2" href="#L2">2</a>   <em class="jxr_javadoccomment"> * </em>
+<a class="jxr_linenumber" name="L3" href="#L3">3</a>   <em class="jxr_javadoccomment"> */</em>
+<a class="jxr_linenumber" name="L4" href="#L4">4</a>   <strong class="jxr_keyword">package</strong> com.artreset.app.art.service;
+<a class="jxr_linenumber" name="L5" href="#L5">5</a>   
+<a class="jxr_linenumber" name="L6" href="#L6">6</a>   <strong class="jxr_keyword">import</strong> <strong class="jxr_keyword">static</strong> junit.framework.Assert.assertNull;
+<a class="jxr_linenumber" name="L7" href="#L7">7</a>   <strong class="jxr_keyword">import</strong> <strong class="jxr_keyword">static</strong> org.hamcrest.Matchers.is;
+<a class="jxr_linenumber" name="L8" href="#L8">8</a>   <strong class="jxr_keyword">import</strong> <strong class="jxr_keyword">static</strong> org.junit.Assert.assertThat;
+<a class="jxr_linenumber" name="L9" href="#L9">9</a>   <strong class="jxr_keyword">import</strong> <strong class="jxr_keyword">static</strong> org.mockito.Mockito.mock;
+<a class="jxr_linenumber" name="L10" href="#L10">10</a>  <strong class="jxr_keyword">import</strong> <strong class="jxr_keyword">static</strong> org.mockito.Mockito.when;
+<a class="jxr_linenumber" name="L11" href="#L11">11</a>  <strong class="jxr_keyword">import</strong> <strong class="jxr_keyword">static</strong> org.mockito.Mockito.times;
+<a class="jxr_linenumber" name="L12" href="#L12">12</a>  <strong class="jxr_keyword">import</strong> <strong class="jxr_keyword">static</strong> org.mockito.Mockito.verify;
+<a class="jxr_linenumber" name="L13" href="#L13">13</a>  <strong class="jxr_keyword">import</strong> <strong class="jxr_keyword">static</strong> org.mockito.Mockito.verifyNoMoreInteractions;
+<a class="jxr_linenumber" name="L14" href="#L14">14</a>  
+<a class="jxr_linenumber" name="L15" href="#L15">15</a>  <strong class="jxr_keyword">import</strong> java.util.ArrayList;
+<a class="jxr_linenumber" name="L16" href="#L16">16</a>  <strong class="jxr_keyword">import</strong> java.util.List;
+<a class="jxr_linenumber" name="L17" href="#L17">17</a>  
+<a class="jxr_linenumber" name="L18" href="#L18">18</a>  <strong class="jxr_keyword">import</strong> org.junit.Before;
+<a class="jxr_linenumber" name="L19" href="#L19">19</a>  <strong class="jxr_keyword">import</strong> org.junit.Test;
+<a class="jxr_linenumber" name="L20" href="#L20">20</a>  <strong class="jxr_keyword">import</strong> org.mockito.ArgumentCaptor;
+<a class="jxr_linenumber" name="L21" href="#L21">21</a>  
+<a class="jxr_linenumber" name="L22" href="#L22">22</a>  <strong class="jxr_keyword">import</strong> com.artreset.app.art.dto.ArtDTO;
+<a class="jxr_linenumber" name="L23" href="#L23">23</a>  <strong class="jxr_keyword">import</strong> com.artreset.app.art.dto.ArtDTOBuilder;
+<a class="jxr_linenumber" name="L24" href="#L24">24</a>  <strong class="jxr_keyword">import</strong> com.artreset.app.art.model.Art;
+<a class="jxr_linenumber" name="L25" href="#L25">25</a>  <strong class="jxr_keyword">import</strong> com.artreset.app.art.repository.ArtRepository;
+<a class="jxr_linenumber" name="L26" href="#L26">26</a>  <strong class="jxr_keyword">import</strong> com.artreset.app.artist.repository.ArtistRepository;
+<a class="jxr_linenumber" name="L27" href="#L27">27</a>  
+<a class="jxr_linenumber" name="L28" href="#L28">28</a>  <em class="jxr_javadoccomment">/**</em>
+<a class="jxr_linenumber" name="L29" href="#L29">29</a>  <em class="jxr_javadoccomment"> * @author Taehyun Jung</em>
+<a class="jxr_linenumber" name="L30" href="#L30">30</a>  <em class="jxr_javadoccomment"> *</em>
+<a class="jxr_linenumber" name="L31" href="#L31">31</a>  <em class="jxr_javadoccomment"> */</em>
+<a class="jxr_linenumber" name="L32" href="#L32">32</a>  <strong class="jxr_keyword">public</strong> <strong class="jxr_keyword">class</strong> <a href="../../../../../com/artreset/app/art/service/RepositoryArtServiceTest.html">RepositoryArtServiceTest</a> {
+<a class="jxr_linenumber" name="L33" href="#L33">33</a>  	
+<a class="jxr_linenumber" name="L34" href="#L34">34</a>  	<strong class="jxr_keyword">private</strong> <strong class="jxr_keyword">static</strong> <strong class="jxr_keyword">final</strong> String TITLE = <span class="jxr_string">"title"</span>;
+<a class="jxr_linenumber" name="L35" href="#L35">35</a>  
+<a class="jxr_linenumber" name="L36" href="#L36">36</a>  	<strong class="jxr_keyword">private</strong> <strong class="jxr_keyword">static</strong> <strong class="jxr_keyword">final</strong> String DESCRIPTION = <span class="jxr_string">"description"</span>;;
+<a class="jxr_linenumber" name="L37" href="#L37">37</a>  
+<a class="jxr_linenumber" name="L38" href="#L38">38</a>  	<strong class="jxr_keyword">private</strong> RepositoryArtService service;
+<a class="jxr_linenumber" name="L39" href="#L39">39</a>  	
+<a class="jxr_linenumber" name="L40" href="#L40">40</a>  	<strong class="jxr_keyword">private</strong> ArtRepository repositoryMock;
+<a class="jxr_linenumber" name="L41" href="#L41">41</a>  	<strong class="jxr_keyword">private</strong> ArtistRepository artistRepositoryMock;
+<a class="jxr_linenumber" name="L42" href="#L42">42</a>  	
+<a class="jxr_linenumber" name="L43" href="#L43">43</a>  	@Before
+<a class="jxr_linenumber" name="L44" href="#L44">44</a>  	<strong class="jxr_keyword">public</strong> <strong class="jxr_keyword">void</strong> setUp() {
+<a class="jxr_linenumber" name="L45" href="#L45">45</a>  		repositoryMock = mock(ArtRepository.<strong class="jxr_keyword">class</strong>);
+<a class="jxr_linenumber" name="L46" href="#L46">46</a>  		service = <strong class="jxr_keyword">new</strong> RepositoryArtService(repositoryMock, artistRepositoryMock);
+<a class="jxr_linenumber" name="L47" href="#L47">47</a>  	}
+<a class="jxr_linenumber" name="L48" href="#L48">48</a>  	
+<a class="jxr_linenumber" name="L49" href="#L49">49</a>  	@Test
+<a class="jxr_linenumber" name="L50" href="#L50">50</a>  	<strong class="jxr_keyword">public</strong> <strong class="jxr_keyword">void</strong> add_호출후_새로운_ART_항목이_저장되는지_테스트() {
+<a class="jxr_linenumber" name="L51" href="#L51">51</a>  		ArtDTO dto = <strong class="jxr_keyword">new</strong> <a href="../../../../../com/artreset/app/art/dto/ArtDTOBuilder.html">ArtDTOBuilder</a>()
+<a class="jxr_linenumber" name="L52" href="#L52">52</a>  				.title(TITLE)
+<a class="jxr_linenumber" name="L53" href="#L53">53</a>  				.description(DESCRIPTION)
+<a class="jxr_linenumber" name="L54" href="#L54">54</a>  				.build();
+<a class="jxr_linenumber" name="L55" href="#L55">55</a>  		
+<a class="jxr_linenumber" name="L56" href="#L56">56</a>  		service.add(dto);
+<a class="jxr_linenumber" name="L57" href="#L57">57</a>  		
+<a class="jxr_linenumber" name="L58" href="#L58">58</a>  		ArgumentCaptor&lt;Art&gt; artArgumentCaptor = ArgumentCaptor.forClass(Art.<strong class="jxr_keyword">class</strong>);
+<a class="jxr_linenumber" name="L59" href="#L59">59</a>  		
+<a class="jxr_linenumber" name="L60" href="#L60">60</a>  		verify(repositoryMock, times(1)).save(artArgumentCaptor.capture());
+<a class="jxr_linenumber" name="L61" href="#L61">61</a>  		verifyNoMoreInteractions(repositoryMock);
+<a class="jxr_linenumber" name="L62" href="#L62">62</a>  		
+<a class="jxr_linenumber" name="L63" href="#L63">63</a>  		Art model = artArgumentCaptor.getValue();
+<a class="jxr_linenumber" name="L64" href="#L64">64</a>  		
+<a class="jxr_linenumber" name="L65" href="#L65">65</a>  		assertNull(model.getId());
+<a class="jxr_linenumber" name="L66" href="#L66">66</a>  		assertThat(model.getTitle(), is(dto.getTitle()));
+<a class="jxr_linenumber" name="L67" href="#L67">67</a>  		assertThat(model.getDescription(), is(dto.getDescription()));
+<a class="jxr_linenumber" name="L68" href="#L68">68</a>  	}
+<a class="jxr_linenumber" name="L69" href="#L69">69</a>  	
+<a class="jxr_linenumber" name="L70" href="#L70">70</a>  	@Test
+<a class="jxr_linenumber" name="L71" href="#L71">71</a>  	<strong class="jxr_keyword">public</strong> <strong class="jxr_keyword">void</strong> findAll_호출시_모든_Art_항목을_반환하는지_테스트() {
+<a class="jxr_linenumber" name="L72" href="#L72">72</a>  		List&lt;Art&gt; models = <strong class="jxr_keyword">new</strong> ArrayList&lt;Art&gt;();
+<a class="jxr_linenumber" name="L73" href="#L73">73</a>  		when(repositoryMock.findAll()).thenReturn(models);
+<a class="jxr_linenumber" name="L74" href="#L74">74</a>  		
+<a class="jxr_linenumber" name="L75" href="#L75">75</a>  		List&lt;Art&gt; actual = service.findAll();
+<a class="jxr_linenumber" name="L76" href="#L76">76</a>  		
+<a class="jxr_linenumber" name="L77" href="#L77">77</a>  		verify(repositoryMock, times(1)).findAll();
+<a class="jxr_linenumber" name="L78" href="#L78">78</a>  		verifyNoMoreInteractions(repositoryMock);
+<a class="jxr_linenumber" name="L79" href="#L79">79</a>  		
+<a class="jxr_linenumber" name="L80" href="#L80">80</a>  		assertThat(actual, is(models));
+<a class="jxr_linenumber" name="L81" href="#L81">81</a>  	}
+<a class="jxr_linenumber" name="L82" href="#L82">82</a>  	
+<a class="jxr_linenumber" name="L83" href="#L83">83</a>  
+<a class="jxr_linenumber" name="L84" href="#L84">84</a>  }
+</pre>
+<hr/>
+<div id="footer">Copyright &#169; 2014 <a href="http://www.artreset.com">Artrest</a>. All rights reserved.</div>
+</body>
+</html>

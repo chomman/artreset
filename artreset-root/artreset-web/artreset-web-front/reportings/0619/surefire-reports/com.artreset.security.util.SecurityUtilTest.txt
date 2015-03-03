@@ -1,0 +1,24 @@
+-------------------------------------------------------------------------------
+Test set: com.artreset.security.util.SecurityUtilTest
+-------------------------------------------------------------------------------
+Tests run: 2, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 0 sec <<< FAILURE! - in com.artreset.security.util.SecurityUtilTest
+logInUser_UserSignInByUsingSocialSignInProvider_ShouldAddUserDetailsToSecurityContext(com.artreset.security.util.SecurityUtilTest)  Time elapsed: 0 sec  <<< FAILURE!
+java.lang.AssertionError: Expected logged in user to be <com.artreset.model.User@4bf0bb[id=1,creationTime=<null>,email=foo@bar.com,firstName=Foo,lastName=Bar,modificationTime=<null>,signInProvider=TWITTER,version=0]> but was <null>
+	at org.fest.assertions.Fail.failure(Fail.java:228)
+	at org.fest.assertions.Fail.fail(Fail.java:218)
+	at org.fest.assertions.Fail.failWithMessage(Fail.java:177)
+	at org.fest.assertions.Fail.failIfActualIsNull(Fail.java:99)
+	at org.fest.assertions.GenericAssert.isNotNull(GenericAssert.java:238)
+	at com.artreset.security.util.SecurityContextAssert.loggedInUserIs(SecurityContextAssert.java:44)
+	at com.artreset.security.util.SecurityUtilTest.logInUser_UserSignInByUsingSocialSignInProvider_ShouldAddUserDetailsToSecurityContext(SecurityUtilTest.java:52)
+
+logInUser_UserRegisteredByUsingFormRegistration_ShouldAddUserDetailsToSecurityContext(com.artreset.security.util.SecurityUtilTest)  Time elapsed: 0 sec  <<< FAILURE!
+java.lang.AssertionError: Expected logged in user to be <com.artreset.model.User@561bc6[id=1,creationTime=<null>,email=foo@bar.com,firstName=Foo,lastName=Bar,modificationTime=<null>,signInProvider=<null>,version=0]> but was <null>
+	at org.fest.assertions.Fail.failure(Fail.java:228)
+	at org.fest.assertions.Fail.fail(Fail.java:218)
+	at org.fest.assertions.Fail.failWithMessage(Fail.java:177)
+	at org.fest.assertions.Fail.failIfActualIsNull(Fail.java:99)
+	at org.fest.assertions.GenericAssert.isNotNull(GenericAssert.java:238)
+	at com.artreset.security.util.SecurityContextAssert.loggedInUserIs(SecurityContextAssert.java:44)
+	at com.artreset.security.util.SecurityUtilTest.logInUser_UserRegisteredByUsingFormRegistration_ShouldAddUserDetailsToSecurityContext(SecurityUtilTest.java:34)
+

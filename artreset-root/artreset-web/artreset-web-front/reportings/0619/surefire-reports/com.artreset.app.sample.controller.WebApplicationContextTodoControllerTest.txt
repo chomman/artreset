@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: com.artreset.app.sample.controller.WebApplicationContextTodoControllerTest
+-------------------------------------------------------------------------------
+Tests run: 15, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.662 sec - in com.artreset.app.sample.controller.WebApplicationContextTodoControllerTest

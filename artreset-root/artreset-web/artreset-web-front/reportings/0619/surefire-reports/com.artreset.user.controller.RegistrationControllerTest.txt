@@ -1,0 +1,114 @@
+-------------------------------------------------------------------------------
+Test set: com.artreset.user.controller.RegistrationControllerTest
+-------------------------------------------------------------------------------
+Tests run: 14, Failures: 11, Errors: 0, Skipped: 0, Time elapsed: 0.647 sec <<< FAILURE! - in com.artreset.user.controller.RegistrationControllerTest
+registerUserAccount_NormalRegistrationAndPasswordMismatch_ShouldRenderRegistrationFormWithValidationErrors(com.artreset.user.controller.RegistrationControllerTest)  Time elapsed: 0 sec  <<< FAILURE!
+java.lang.AssertionError: Expected authentication to be <null> but was <Mock for Authentication, hashCode: 165228>.
+	at org.fest.assertions.Fail.failure(Fail.java:228)
+	at org.fest.assertions.Fail.fail(Fail.java:218)
+	at org.fest.assertions.Fail.failWithMessage(Fail.java:177)
+	at org.fest.assertions.Fail.failIfNotNull(Fail.java:129)
+	at org.fest.assertions.GenericAssert.isNull(GenericAssert.java:56)
+	at com.artreset.security.util.SecurityContextAssert.userIsAnonymous(SecurityContextAssert.java:31)
+	at com.artreset.user.controller.RegistrationControllerTest.registerUserAccount_NormalRegistrationAndPasswordMismatch_ShouldRenderRegistrationFormWithValidationErrors(RegistrationControllerTest.java:255)
+
+registerUserAccount_SocialSignInAndTooLongValues_ShouldRenderRegistrationFormWithValidationErrors(com.artreset.user.controller.RegistrationControllerTest)  Time elapsed: 0 sec  <<< FAILURE!
+java.lang.AssertionError: Expected authentication to be <null> but was <Mock for Authentication, hashCode: 165228>.
+	at org.fest.assertions.Fail.failure(Fail.java:228)
+	at org.fest.assertions.Fail.fail(Fail.java:218)
+	at org.fest.assertions.Fail.failWithMessage(Fail.java:177)
+	at org.fest.assertions.Fail.failIfNotNull(Fail.java:129)
+	at org.fest.assertions.GenericAssert.isNull(GenericAssert.java:56)
+	at com.artreset.security.util.SecurityContextAssert.userIsAnonymous(SecurityContextAssert.java:31)
+	at com.artreset.user.controller.RegistrationControllerTest.registerUserAccount_SocialSignInAndTooLongValues_ShouldRenderRegistrationFormWithValidationErrors(RegistrationControllerTest.java:453)
+
+registerUserAccount_NormalRegistrationAndTooLongValues_ShouldRenderRegistrationFormWithValidationErrors(com.artreset.user.controller.RegistrationControllerTest)  Time elapsed: 0.001 sec  <<< FAILURE!
+java.lang.AssertionError: Expected authentication to be <null> but was <Mock for Authentication, hashCode: 165228>.
+	at org.fest.assertions.Fail.failure(Fail.java:228)
+	at org.fest.assertions.Fail.fail(Fail.java:218)
+	at org.fest.assertions.Fail.failWithMessage(Fail.java:177)
+	at org.fest.assertions.Fail.failIfNotNull(Fail.java:129)
+	at org.fest.assertions.GenericAssert.isNull(GenericAssert.java:56)
+	at com.artreset.security.util.SecurityContextAssert.userIsAnonymous(SecurityContextAssert.java:31)
+	at com.artreset.user.controller.RegistrationControllerTest.registerUserAccount_NormalRegistrationAndTooLongValues_ShouldRenderRegistrationFormWithValidationErrors(RegistrationControllerTest.java:224)
+
+registerUserAccount_SocialSignInAndEmailExist_ShouldRenderRegistrationFormWithFieldError(com.artreset.user.controller.RegistrationControllerTest)  Time elapsed: 0 sec  <<< FAILURE!
+java.lang.AssertionError: Expected authentication to be <null> but was <Mock for Authentication, hashCode: 165228>.
+	at org.fest.assertions.Fail.failure(Fail.java:228)
+	at org.fest.assertions.Fail.fail(Fail.java:218)
+	at org.fest.assertions.Fail.failWithMessage(Fail.java:177)
+	at org.fest.assertions.Fail.failIfNotNull(Fail.java:129)
+	at org.fest.assertions.GenericAssert.isNull(GenericAssert.java:56)
+	at com.artreset.security.util.SecurityContextAssert.userIsAnonymous(SecurityContextAssert.java:31)
+	at com.artreset.user.controller.RegistrationControllerTest.registerUserAccount_SocialSignInAndEmailExist_ShouldRenderRegistrationFormWithFieldError(RegistrationControllerTest.java:531)
+
+registerUserAccount_SocialSignInAndMalformedEmail_ShouldRenderRegistrationFormWithValidationError(com.artreset.user.controller.RegistrationControllerTest)  Time elapsed: 0 sec  <<< FAILURE!
+java.lang.AssertionError: Expected authentication to be <null> but was <Mock for Authentication, hashCode: 165228>.
+	at org.fest.assertions.Fail.failure(Fail.java:228)
+	at org.fest.assertions.Fail.fail(Fail.java:218)
+	at org.fest.assertions.Fail.failWithMessage(Fail.java:177)
+	at org.fest.assertions.Fail.failIfNotNull(Fail.java:129)
+	at org.fest.assertions.GenericAssert.isNull(GenericAssert.java:56)
+	at com.artreset.security.util.SecurityContextAssert.userIsAnonymous(SecurityContextAssert.java:31)
+	at com.artreset.user.controller.RegistrationControllerTest.registerUserAccount_SocialSignInAndMalformedEmail_ShouldRenderRegistrationFormWithValidationError(RegistrationControllerTest.java:491)
+
+registerUserAccount_NormalRegistrationAndMalformedEmail_ShouldRenderRegistrationFormWithValidationError(com.artreset.user.controller.RegistrationControllerTest)  Time elapsed: 0.001 sec  <<< FAILURE!
+java.lang.AssertionError: Expected authentication to be <null> but was <Mock for Authentication, hashCode: 165228>.
+	at org.fest.assertions.Fail.failure(Fail.java:228)
+	at org.fest.assertions.Fail.fail(Fail.java:218)
+	at org.fest.assertions.Fail.failWithMessage(Fail.java:177)
+	at org.fest.assertions.Fail.failIfNotNull(Fail.java:129)
+	at org.fest.assertions.GenericAssert.isNull(GenericAssert.java:56)
+	at com.artreset.security.util.SecurityContextAssert.userIsAnonymous(SecurityContextAssert.java:31)
+	at com.artreset.user.controller.RegistrationControllerTest.registerUserAccount_NormalRegistrationAndMalformedEmail_ShouldRenderRegistrationFormWithValidationError(RegistrationControllerTest.java:325)
+
+registerUserAccount_SocialSignInAndEmptyForm_ShouldRenderRegistrationFormWithValidationErrors(com.artreset.user.controller.RegistrationControllerTest)  Time elapsed: 0 sec  <<< FAILURE!
+java.lang.AssertionError: Expected authentication to be <null> but was <Mock for Authentication, hashCode: 165228>.
+	at org.fest.assertions.Fail.failure(Fail.java:228)
+	at org.fest.assertions.Fail.fail(Fail.java:218)
+	at org.fest.assertions.Fail.failWithMessage(Fail.java:177)
+	at org.fest.assertions.Fail.failIfNotNull(Fail.java:129)
+	at org.fest.assertions.GenericAssert.isNull(GenericAssert.java:56)
+	at com.artreset.security.util.SecurityContextAssert.userIsAnonymous(SecurityContextAssert.java:31)
+	at com.artreset.user.controller.RegistrationControllerTest.registerUserAccount_SocialSignInAndEmptyForm_ShouldRenderRegistrationFormWithValidationErrors(RegistrationControllerTest.java:407)
+
+registerUserAccount_NormalRegistration_ShouldCreateNewUserAccountAndRenderHomePage(com.artreset.user.controller.RegistrationControllerTest)  Time elapsed: 0.118 sec  <<< FAILURE!
+java.lang.AssertionError: Expected logged in user to be <com.artreset.model.User@15f6128[id=1,creationTime=<null>,email=john.smith@gmail.com,firstName=John,lastName=Smith,modificationTime=<null>,signInProvider=<null>,version=0]> but was <null>
+	at org.fest.assertions.Fail.failure(Fail.java:228)
+	at org.fest.assertions.Fail.fail(Fail.java:218)
+	at org.fest.assertions.Fail.failWithMessage(Fail.java:177)
+	at org.fest.assertions.Fail.failIfActualIsNull(Fail.java:99)
+	at org.fest.assertions.GenericAssert.isNotNull(GenericAssert.java:238)
+	at com.artreset.security.util.SecurityContextAssert.loggedInUserIs(SecurityContextAssert.java:44)
+	at com.artreset.user.controller.RegistrationControllerTest.registerUserAccount_NormalRegistration_ShouldCreateNewUserAccountAndRenderHomePage(RegistrationControllerTest.java:354)
+
+registerUserAccount_SocialSignIn_ShouldCreateNewUserAccountAndRenderHomePage(com.artreset.user.controller.RegistrationControllerTest)  Time elapsed: 0.101 sec  <<< FAILURE!
+java.lang.AssertionError: Expected logged in user to be <com.artreset.model.User@83c5e0[id=1,creationTime=<null>,email=john.smith@gmail.com,firstName=John,lastName=Smith,modificationTime=<null>,signInProvider=TWITTER,version=0]> but was <null>
+	at org.fest.assertions.Fail.failure(Fail.java:228)
+	at org.fest.assertions.Fail.fail(Fail.java:218)
+	at org.fest.assertions.Fail.failWithMessage(Fail.java:177)
+	at org.fest.assertions.Fail.failIfActualIsNull(Fail.java:99)
+	at org.fest.assertions.GenericAssert.isNotNull(GenericAssert.java:238)
+	at com.artreset.security.util.SecurityContextAssert.loggedInUserIs(SecurityContextAssert.java:44)
+	at com.artreset.user.controller.RegistrationControllerTest.registerUserAccount_SocialSignIn_ShouldCreateNewUserAccountAndRenderHomePage(RegistrationControllerTest.java:581)
+
+registerUserAccount_NormalRegistrationAndEmailExists_ShouldRenderRegistrationFormWithFieldError(com.artreset.user.controller.RegistrationControllerTest)  Time elapsed: 0.138 sec  <<< FAILURE!
+java.lang.AssertionError: Expected authentication to be <null> but was <Mock for Authentication, hashCode: 165228>.
+	at org.fest.assertions.Fail.failure(Fail.java:228)
+	at org.fest.assertions.Fail.fail(Fail.java:218)
+	at org.fest.assertions.Fail.failWithMessage(Fail.java:177)
+	at org.fest.assertions.Fail.failIfNotNull(Fail.java:129)
+	at org.fest.assertions.GenericAssert.isNull(GenericAssert.java:56)
+	at com.artreset.security.util.SecurityContextAssert.userIsAnonymous(SecurityContextAssert.java:31)
+	at com.artreset.user.controller.RegistrationControllerTest.registerUserAccount_NormalRegistrationAndEmailExists_ShouldRenderRegistrationFormWithFieldError(RegistrationControllerTest.java:285)
+
+registerUserAccount_NormalRegistrationAndEmptyForm_ShouldRenderRegistrationFormWithValidationErrors(com.artreset.user.controller.RegistrationControllerTest)  Time elapsed: 0.128 sec  <<< FAILURE!
+java.lang.AssertionError: Expected authentication to be <null> but was <Mock for Authentication, hashCode: 165228>.
+	at org.fest.assertions.Fail.failure(Fail.java:228)
+	at org.fest.assertions.Fail.fail(Fail.java:218)
+	at org.fest.assertions.Fail.failWithMessage(Fail.java:177)
+	at org.fest.assertions.Fail.failIfNotNull(Fail.java:129)
+	at org.fest.assertions.GenericAssert.isNull(GenericAssert.java:56)
+	at com.artreset.security.util.SecurityContextAssert.userIsAnonymous(SecurityContextAssert.java:31)
+	at com.artreset.user.controller.RegistrationControllerTest.registerUserAccount_NormalRegistrationAndEmptyForm_ShouldRenderRegistrationFormWithValidationErrors(RegistrationControllerTest.java:188)
+

@@ -1,0 +1,43 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>com.artreset</groupId>
+	<artifactId>artreset-root</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+	<packaging>pom</packaging>
+	<modules>
+		<module>artreset-commons</module>
+		<module>artreset-web</module>
+	</modules>
+
+	<developers>
+		<developer>
+			<id>chomman</id>
+			<name>정태현(Taehyun Jung)</name>
+			<organization>Artreset</organization>
+			<organizationUrl>http://www.artreset.com</organizationUrl>
+			<roles>
+				<role>CTO</role>
+			</roles>
+			<timezone>+9</timezone>
+		</developer>
+	</developers>
+
+	<!-- Contributors -->
+	<contributors>
+		<contributor>
+			<name>장성환(Sunghoan Jang)</name>
+			<organization>Artreset</organization>
+			<organizationUrl>http://www.artreset.com</organizationUrl>
+			<roles>
+				<role>CEO</role>
+			</roles>
+			<timezone>+9</timezone>
+		</contributor>
+	</contributors>
+
+	<organization>
+		<name>Artreset</name>
+		<url>http://www.artreset.com</url>
+	</organization>
+</project>

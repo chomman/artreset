@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<%@ taglib prefix="sec" uri="http://www.springframework.org/security/tags" %>
+<%@ taglib prefix="spring" uri="http://www.springframework.org/tags" %>
+<html>
+<head>
+    <title><spring:message code="label.homepage.title"/></title>
+</head>
+	<body>
+	
+		<div>
+		    
+		</div>
+
+			<!-- ============================================================= SECTION – HERO ============================================================= -->
+			
+			<section id="hero">
+				<div class="container">
+					
+					<div class="row inner">
+						<div class="col-sm-10 center-block text-center">
+							<header>
+								<h1>Artreset is Big Switch</h1>
+								<p><spring:message code="text.homepage.greeting"/></p>
+							</header>
+						</div><!-- /.col -->
+					</div><!-- /.row -->
+					
+					<div class="row inner-bottom">
+						<div class="col-sm-12">
+							<div id="owl-featured-works" class="owl-carousel owl-outer-nav owl-ui-lg">
+								
+								<div class="item">
+									<a href="portfolio-post.html">
+										<figure>
+											<figcaption class="text-overlay">
+												<div class="info big">
+													<h2>Appscreen Dashboard</h2>
+													<p>Interactive</p>
+												</div><!-- /.info -->
+											</figcaption>
+											<img src="assets/images/art/work01-lg.jpg" alt="">
+										</figure>
+									</a>
+								</div><!-- /.item -->
+								
+								<div class="item">
+									<a href="portfolio-post.html">
+										<figure>
+											<figcaption class="text-overlay">
+												<div class="info big">
+													<h2>Grand Motel</h2>
+													<p>Identity</p>
+												</div><!-- /.info -->
+											</figcaption>
+											<img src="assets/images/art/work02-lg.jpg" alt="">
+										</figure>
+									</a>
+								</div><!-- /.item -->
+								
+								<div class="item">
+									<a href="portfolio-post.html">
+										<figure>
+											<figcaption class="text-overlay">
+												<div class="info big">
+													<h2>Brand Stationery</h2>
+													<p>Identity</p>
+												</div><!-- /.info -->
+											</figcaption>
+											<img src="assets/images/art/work08-lg.jpg" alt="">
+										</figure>
+									</a>
+								</div><!-- /.item -->
+								
+								<div class="item">
+									<a href="portfolio-post.html">
+										<figure>
+											<figcaption class="text-overlay">
+												<div class="info big">
+													<h2>Appscreen Dashboard</h2>
+													<p>Interactive</p>
+												</div><!-- /.info -->
+											</figcaption>
+											<img src="assets/images/art/work15-lg.jpg" alt="">
+										</figure>
+									</a>
+								</div><!-- /.item -->
+								
+								<div class="item">
+									<a href="portfolio-post.html">
+										<figure>
+											<figcaption class="text-overlay">
+												<div class="info big">
+													<h2>Astor & Yancy</h2>
+													<p>Identity</p>
+												</div><!-- /.info -->
+											</figcaption>
+											<img src="assets/images/art/work09-lg.jpg" alt="">
+										</figure>
+									</a>
+								</div><!-- /.item -->
+								
+								<div class="item">
+									<a href="portfolio-post.html">
+										<figure>
+											<figcaption class="text-overlay">
+												<div class="info big">
+													<h2>Signwall</h2>
+													<p>Identity</p>
+												</div><!-- /.info -->
+											</figcaption>
+											<img src="assets/images/art/work16-lg.jpg" alt="">
+										</figure>
+									</a>
+								</div><!-- /.item -->
+								
+								<div class="item">
+									<a href="portfolio-post.html">
+										<figure>
+											<figcaption class="text-overlay">
+												<div class="info big">
+													<h2>Martin Johnson</h2>
+													<p>Identity</p>
+												</div><!-- /.info -->
+											</figcaption>
+											<img src="assets/images/art/work06-lg.jpg" alt="">
+										</figure>
+									</a>
+								</div><!-- /.item -->
+								
+							</div><!-- /.owl-carousel -->
+						</div><!-- /.col -->
+					</div><!-- /.row -->
+					
+				</div><!-- /.container -->
+			</section>
+			
+			<!-- ============================================================= SECTION – HERO : END ============================================================= -->
+			
+			
+			<!-- ============================================================= SECTION – SELECTED WORKS ============================================================= -->
+		
+			<section id="selected-works" class="light-bg">
+				<div class="container inner">
+					
+					<div class="row">
+						<div class="col-md-8 col-sm-9 center-block text-center">
+							<header>
+								<h1>Selected works</h1>
+								<p>Magnis modipsae voloratati andigen daepeditem quiate re porem que aut labor. Laceaque eictemperum quiae sitiorem rest non restibusaes.</p>
+							</header>
+						</div><!-- /.col -->
+					</div><!-- /.row -->
+					
+					<div class="row inner-top-sm">
+						<div class="col-sm-12 portfolio">
+							
+							<ul class="filter text-center">
+								<li><a href="#" data-filter="*" class="active">All</a></li>
+								<li><a href="#" data-filter=".identity">Identity</a></li>
+								<li><a href="#" data-filter=".interactive">Interactive</a></li>
+								<li><a href="#" data-filter=".print">Print</a></li>
+								<li><a href="#" data-filter=".photography">Photography</a></li>
+							</ul><!-- /.filter -->
+							
+							<ul class="items col-3">
+								
+								<li class="item thumb photography">
+									<a href="portfolio-post.html">
+										<figure>
+											<figcaption class="text-overlay">
+												<div class="info">
+													<h4>Daydreaming</h4>
+													<p>Photography</p>
+												</div><!-- /.info -->
+											</figcaption>
+											<img src="assets/images/art/photograph02.jpg" alt="">
+										</figure>
+									</a>
+								</li><!-- /.item -->
+								
+								<li class="item thumb identity">
+									<a href="portfolio-post.html">
+										<figure>
+											<figcaption class="text-overlay">
+												<div class="info">
+													<h4>Handmade Wood Gifts</h4>
+													<p>Identity</p>
+												</div><!-- /.info -->
+											</figcaption>
+											<img src="assets/images/art/work17.jpg" alt="">
+										</figure>
+									</a>
+								</li><!-- /.item -->
+								
+								<li class="item thumb print">
+									<a href="portfolio-post.html">
+										<figure>
+											<figcaption class="text-overlay">
+												<div class="info">
+													<h4>Modern CD Case</h4>
+													<p>Print</p>
+												</div><!-- /.info -->
+											</figcaption>
+											<img src="assets/images/art/work18.jpg" alt="">
+										</figure>
+									</a>
+								</li><!-- /.item -->
+								
+								<li class="item thumb identity">
+									<a href="portfolio-post.html">
+										<figure>
+											<figcaption class="text-overlay">
+												<div class="info">
+													<h4>Designer Brand</h4>
+													<p>Identity</p>
+												</div><!-- /.info -->
+											</figcaption>
+											<img src="assets/images/art/work19.jpg" alt="">
+										</figure>
+									</a>
+								</li><!-- /.item -->
+								
+								<li class="item thumb print">
+									<a href="portfolio-post.html">
+										<figure>
+											<figcaption class="text-overlay">
+												<div class="info">
+													<h4>Tri Fold Brochure</h4>
+													<p>Print</p>
+												</div><!-- /.info -->
+											</figcaption>
+											<img src="assets/images/art/work10.jpg" alt="">
+										</figure>
+									</a>
+								</li><!-- /.item -->
+								
+								<li class="item thumb interactive">
+									<a href="portfolio-post.html">
+										<figure>
+											<figcaption class="text-overlay">
+												<div class="info">
+													<h4>Vintage Bicycles</h4>
+													<p>Interactive</p>
+												</div><!-- /.info -->
+											</figcaption>
+											<img src="assets/images/art/work03.jpg" alt="">
+										</figure>
+									</a>
+								</li><!-- /.item -->
+								
+								<li class="item thumb identity">
+									<a href="portfolio-post.html">
+										<figure>
+											<figcaption class="text-overlay">
+												<div class="info">
+													<h4>Embroidered</h4>
+													<p>Identity</p>
+												</div><!-- /.info -->
+											</figcaption>
+											<img src="assets/images/art/work05.jpg" alt="">
+										</figure>
+									</a>
+								</li><!-- /.item -->
+								
+								<li class="item thumb print">
+									<a href="portfolio-post.html">
+										<figure>
+											<figcaption class="text-overlay">
+												<div class="info">
+													<h4>Electric Dance Book Cover</h4>
+													<p>Print</p>
+												</div><!-- /.info -->
+											</figcaption>
+											<img src="assets/images/art/work20.jpg" alt="">
+										</figure>
+									</a>
+								</li><!-- /.item -->
+								
+								<li class="item thumb identity print">
+									<a href="portfolio-post.html">
+										<figure>
+											<figcaption class="text-overlay">
+												<div class="info">
+													<h4>Brand Stationery</h4>
+													<p>Identity/Print</p>
+												</div><!-- /.info -->
+											</figcaption>
+											<img src="assets/images/art/work21.jpg" alt="">
+										</figure>
+									</a>
+								</li><!-- /.item -->
+								
+							</ul><!-- /.items -->
+							
+						</div><!-- /.col -->
+					</div><!-- /.row -->
+					
+				</div><!-- /.container -->
+			</section>
+			
+			<!-- ============================================================= SECTION – SELECTED WORKS : END ============================================================= -->
+			
+			
+			<!-- ============================================================= SECTION – CLIENTS ============================================================= -->
+		
+			<section id="clients">
+				<div class="container inner">
+					
+					<div class="row">
+						<div class="col-md-8 col-sm-9 center-block text-center">
+							<header>
+								<h1>Clients</h1>
+								<p>Magnis modipsae voloratati andigen daepeditem quiate re porem que aut labor. Laceaque eictemperum quiae sitiorem rest non restibusaes.</p>
+							</header>
+						</div><!-- /.col -->
+					</div><!-- /.row -->
+					
+					<div class="row inner-top-sm">
+						<div class="col-sm-12">
+							<div id="owl-clients" class="owl-carousel owl-outer-nav">
+								
+								<div class="item">
+										<figure>
+											<figcaption class="text-overlay">
+												<div class="info">
+													<h4>Client</h4>
+												</div><!-- /.info -->
+											</figcaption>
+											<img src="assets/images/art/client01.jpg" alt="">
+										</figure>
+								</div><!-- /.item -->
+								
+								<div class="item">
+										<figure>
+											<figcaption class="text-overlay">
+												<div class="info">
+													<h4>Client</h4>
+												</div><!-- /.info -->
+											</figcaption>
+											<img src="assets/images/art/client02.jpg" alt="">
+										</figure>
+								</div><!-- /.item -->
+								
+								<div class="item">
+										<figure>
+											<figcaption class="text-overlay">
+												<div class="info">
+													<h4>Client</h4>
+												</div><!-- /.info -->
+											</figcaption>
+											<img src="assets/images/art/client03.jpg" alt="">
+										</figure>
+								</div><!-- /.item -->
+								
+								<div class="item">
+										<figure>
+											<figcaption class="text-overlay">
+												<div class="info">
+													<h4>Client</h4>
+												</div><!-- /.info -->
+											</figcaption>
+											<img src="assets/images/art/client04.jpg" alt="">
+										</figure>
+								</div><!-- /.item -->
+								
+								<div class="item">
+										<figure>
+											<figcaption class="text-overlay">
+												<div class="info">
+													<h4>Client</h4>
+												</div><!-- /.info -->
+											</figcaption>
+											<img src="assets/images/art/client05.jpg" alt="">
+										</figure>
+								</div><!-- /.item -->
+								
+								<div class="item">
+										<figure>
+											<figcaption class="text-overlay">
+												<div class="info">
+													<h4>Client</h4>
+												</div><!-- /.info -->
+											</figcaption>
+											<img src="assets/images/art/client06.jpg" alt="">
+										</figure>
+								</div><!-- /.item -->
+								
+								<div class="item">
+										<figure>
+											<figcaption class="text-overlay">
+												<div class="info">
+													<h4>Client</h4>
+												</div><!-- /.info -->
+											</figcaption>
+											<img src="assets/images/art/client07.jpg" alt="">
+										</figure>
+								</div><!-- /.item -->
+								
+								<div class="item">
+										<figure>
+											<figcaption class="text-overlay">
+												<div class="info">
+													<h4>Client</h4>
+												</div><!-- /.info -->
+											</figcaption>
+											<img src="assets/images/art/client08.jpg" alt="">
+										</figure>
+								</div><!-- /.item -->
+								
+								<div class="item">
+										<figure>
+											<figcaption class="text-overlay">
+												<div class="info">
+													<h4>Client</h4>
+												</div><!-- /.info -->
+											</figcaption>
+											<img src="assets/images/art/client09.jpg" alt="">
+										</figure>
+								</div><!-- /.item -->
+								
+								<div class="item">
+										<figure>
+											<figcaption class="text-overlay">
+												<div class="info">
+													<h4>Client</h4>
+												</div><!-- /.info -->
+											</figcaption>
+											<img src="assets/images/art/client10.jpg" alt="">
+										</figure>
+								</div><!-- /.item -->
+								
+								<div class="item">
+										<figure>
+											<figcaption class="text-overlay">
+												<div class="info">
+													<h4>Client</h4>
+												</div><!-- /.info -->
+											</figcaption>
+											<img src="assets/images/art/client11.jpg" alt="">
+										</figure>
+								</div><!-- /.item -->
+								
+								<div class="item">
+										<figure>
+											<figcaption class="text-overlay">
+												<div class="info">
+													<h4>Client</h4>
+												</div><!-- /.info -->
+											</figcaption>
+											<img src="assets/images/art/client12.jpg" alt="">
+										</figure>
+								</div><!-- /.item -->
+								
+							</div><!-- /.owl-carousel -->
+						</div><!-- /.col -->
+					</div><!-- /.row -->
+					
+				</div><!-- /.container -->
+			</section>
+			
+			<!-- ============================================================= SECTION – CLIENTS : END ============================================================= -->
+			
+			
+			<!-- ============================================================= SECTION – SHARE ============================================================= -->
+			
+			<section id="share" class="light-bg">
+				<div class="container">
+					
+					<div class="col-sm-4 reset-padding">
+						<a href="#" class="btn-share-md">
+							<p class="name">Facebook</p>
+							<i class="icon-s-facebook"></i>
+							<p class="counter">1080</p>
+						</a>
+					</div><!-- /.col -->
+					
+					<div class="col-sm-4 reset-padding">
+						<a href="#" class="btn-share-md">
+							<p class="name">Twitter</p>
+							<i class="icon-s-twitter"></i>
+							<p class="counter">1263</p>
+						</a>
+					</div><!-- /.col -->
+					
+					<div class="col-sm-4 reset-padding">
+						<a href="#" class="btn-share-md">
+							<p class="name">Google +</p>
+							<i class="icon-s-gplus"></i>
+							<p class="counter">963</p>
+						</a>
+					</div><!-- /.col -->
+					
+				</div><!-- /.container -->
+			</section>
+			
+			<!-- ============================================================= SECTION – SHARE : END ============================================================= -->
+			
+			
+			
+	</body>
+</html>
